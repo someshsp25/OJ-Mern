@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./server
+    ports:
+      - 5000:5000
+    environment:
+      - MONGO_URL=mongodb+srv://somesh25:somesh25@cluster0.wv62cev.mongodb.net/online_judge?retryWrites=true&w=majority&appName=Cluster0
+    volumes:
+      - ./server/utils/firebase/creds.json:/app/creds.json
+    depends_on:
+      - mongo
+
+  client:
+    build: ./client
+    ports:
+      - 5173:80
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
+  server-data:

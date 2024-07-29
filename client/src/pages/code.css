@@ -1,0 +1,105 @@
+.container-code {
+  width: 100%;
+}
+
+.header-code {
+  background: linear-gradient(#2A00B7, #42006C);
+  padding: 1rem; /* p-4 */
+  display: flex; /* Added */
+  justify-content: space-between; /* Added */
+  align-items: center; /* Added */
+}
+
+.header-code h1 {
+  font-size: 3rem; /* text-3xl */
+  color: white; /* text-white */
+}
+
+.header-code button {
+  margin-left: auto; /* Changed */
+  position: relative;
+  font-size: larger;
+  padding: 1rem 2rem; /* px-4 py-2 */
+  border-radius: 0.25rem; /* rounded */
+  width: 15%; /* w-1/4 */
+  color: white; /* text-white */
+  text-align: center;
+  background-color: #4a5568; /* bg-gray-700 */
+}
+
+.main-code {
+  margin-top: 0.5rem; /* mt-2 */
+  height: 100vh; /* h-screen */
+  display: flex; /* flex */
+}
+
+.sidebar-code {
+  background-color: #4a5568; /* bg-gray-700 */
+  width: 33.333333%; /* w-1/3 */
+  padding: 1rem; /* p-4 */
+  overflow-y: auto; /* overflow-y-auto */
+}
+
+.sidebar-code h2 {
+  font-size: 2.75rem; /* text-2xl */
+  color: white; /* text-white */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.sidebar-code p {
+  font-size: 1.5rem;
+  color: white; /* text-white */
+}
+
+.content-code {
+  background-color: #a0aec0; /* bg-gray-400 */
+  width: 66.666667%; /* w-2/3 */
+  padding: 1rem; /* p-4 */
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  overflow-y: auto; /* overflow-y-auto */
+}
+
+.content-code h2 {
+  font-size: 2rem; /* text-2xl */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.textarea-code {
+  flex-grow: 1; /* flex-grow */
+  padding: 0.5rem; /* p-2 */
+  border: 1px solid #e2e8f0; /* border border-gray-300 */
+  border-radius: 0.25rem; /* rounded */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.textarea-result {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.buttons-code {
+  display: flex; /* flex */
+  justify-content: space-around; /* justify-around */
+}
+
+.button-code {
+  font-size: larger;
+  padding: 1rem 2rem; /* px-4 py-2 */
+  border-radius: 0.25rem; /* rounded */
+  width: 25%; /* w-1/4 */
+  color: white; /* text-white */
+  text-align: center;
+}
+
+.button-console-code {
+  background-color: #a0aec0; /* bg-gray-500 */
+}
+
+.button-run-code {
+  background-color: #4a5568; /* bg-gray-700 */
+}
+
+.button-submit-code {
+  background: linear-gradient(#2A00B7, #42006C);
+}
